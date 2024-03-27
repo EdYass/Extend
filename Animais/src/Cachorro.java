@@ -1,9 +1,11 @@
 import java.util.*;
 public class Cachorro extends Animais{
     private String raca;
-    public Cachorro(String nome, int idade, String raca) {
-        super(nome, idade);
+    private int idade;
+    public Cachorro(String nome, float peso, int idade, String raca) {
+        super(nome, peso);
         this.raca=raca;
+        this.idade=idade;
     }
 
     public void coletarDados(){
@@ -11,9 +13,12 @@ public class Cachorro extends Animais{
         Scanner teclado = new Scanner(System.in);
         System.out.printf("Digite a raça do animal: ");
         this.raca = teclado.nextLine();
+        System.out.printf("Digite a idade do animal: ");
+        this.idade = teclado.nextInt();
     }
     public void apresentarDados() {
         super.apresentarDados();
         System.out.println("Raça: "+this.raca);
+        System.out.println("Idade: "+this.idade);
     }
 }
