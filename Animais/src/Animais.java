@@ -35,6 +35,7 @@ public class Animais implements Metodos {
     @Override
     public void apresentarDados() {
         System.out.println("Nome: "+this.nome);
-        System.out.println("Peso: "+this.peso);
+        System.out.println("Peso: "+this.peso+"KG");
+
     }
 }
