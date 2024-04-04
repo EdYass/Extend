@@ -15,6 +15,7 @@ public class Carro extends Veiculo{
         Scanner teclado = new Scanner(System.in);
         System.out.printf("Digite a cor do carro: ");
         this.cor= teclado.nextLine();
+        teclado.close();
     }
 
     public void apresentarDados(){

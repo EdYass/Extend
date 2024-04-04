@@ -30,6 +30,7 @@ public class Animais implements Metodos {
         this.nome = teclado.nextLine();
         System.out.printf("Digite o peso do animal: ");
         this.peso = teclado.nextFloat();
+        teclado.close();
     }
 
     @Override

@@ -15,6 +15,7 @@ public class Cachorro extends Animais{
         this.raca = teclado.nextLine();
         System.out.printf("Digite a idade do animal: ");
         this.idade = teclado.nextInt();
+        teclado.close();
     }
     public void apresentarDados() {
         super.apresentarDados();

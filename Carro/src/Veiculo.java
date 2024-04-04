@@ -20,6 +20,7 @@ public class Veiculo {
         this.modelo=teclado.nextLine();
         System.out.printf("Digite o ano do carro: ");
         this.ano=teclado.nextInt();
+        teclado.close();
     }
 
     public void apresentarDados(){

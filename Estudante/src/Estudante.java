@@ -11,10 +11,11 @@ public class Estudante extends Pessoa{
     public void setMatricula(int matricula){this.matricula=matricula;}
 
     public void coletarDados(){
-        Scanner tecaldo = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         super.coletarDados();
         System.out.printf("Digite a matrícula: ");
-        this.matricula=tecaldo.nextInt();
+        this.matricula=teclado.nextInt();
+        teclado.close();
     }
 
     public void mostrarDados(){
